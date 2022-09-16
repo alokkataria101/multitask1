@@ -15,4 +15,4 @@ spec:
       command:
         - echo
       args:
-        - "hello world from $(inputs.params.repository):$(inputs.params.branch)!!"
+        - "hello world from $(inputs.params.repository):$(inputs.params.branch)!!!!"
