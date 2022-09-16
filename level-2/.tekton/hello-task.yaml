@@ -7,12 +7,14 @@ spec:
     params:
       - name: repository
         type: string
+        value: https://github.com/SudhaManu1/Tekton-Tutorial
       - name: branch
         type: string
+        value: master
   steps:
     - name: echo
       image: ubuntu:18.04
       command:
         - echo
       args:
-        - "hello world from $(inputs.params.repository):$(inputs.params.branch)!!"
+        - "hello world from $(inputs.params.repository):$(inputs.params.branch)!!!!"
