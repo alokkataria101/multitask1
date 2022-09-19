@@ -5,8 +5,9 @@ metadata:
 spec:
   steps:
     - name: echo
-      image: ubuntu:18.04
-      command:
-        - echo
+      image: python
+      command: ["/bin/bash", "-c"]
       args:
         - "hello world!!!!!!!-gitTrigger"
+        - set -e -o pipefail;
+          echo "Cloning REPOSITORY";
