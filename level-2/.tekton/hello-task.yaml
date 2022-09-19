@@ -16,4 +16,4 @@ spec:
       command:
         - echo
       args:
-        - "hello world from $(params.repository):$(params.branch):$(params:path)!!"
+        - "hello world from $(params.repository):$(params.branch):$(params.path)!!"
