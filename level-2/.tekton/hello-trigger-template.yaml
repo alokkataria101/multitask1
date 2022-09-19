@@ -22,7 +22,7 @@ spec:
           - name: repository
             value: "https://github.com/SudhaManu1/Tekton-Tutorial.git"
           - name: branch
-            value: "master"
+            value: "$(params.branch)"
           - name: path
             value: "level-2/.tekton"
 
