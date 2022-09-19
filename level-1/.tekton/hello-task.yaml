@@ -6,8 +6,7 @@ spec:
   steps:
     - name: echo
       image: python
-      command: ["/bin/bash", "-c"]
-      args:
-        - "hello world!!!!!!!-gitTrigger"
-        - set -e -o pipefail;
-          echo "Cloning REPOSITORY";
+      script: |
+        #!/usr/bin/env python3
+        print("Hello from Python!")
+        print("Hello from Python!101")
