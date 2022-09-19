@@ -24,6 +24,6 @@ spec:
           - name: branch
             value: "$(params.branch)"
           - name: path
-            value: "$(params.path)"
+            value: "level-2/.tekton"
 
 
