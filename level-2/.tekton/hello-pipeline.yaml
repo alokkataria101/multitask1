@@ -8,6 +8,8 @@ spec:
       description: the git repo
     - name: branch
       description: the branch for the git repo
+    - name: path
+      description: path to level-2 repo
   tasks:
     - name: pipeline-hello-task
       taskRef:
@@ -17,3 +19,5 @@ spec:
           value: $(params.repository)
         - name: branch
           value: $(params.branch)
+        - name: path
+          value: $(params.path)
