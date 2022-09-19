@@ -3,18 +3,17 @@ kind: Task
 metadata:
   name: hello-task
 spec:
-  inputs:
-    params:
-      - name: repository
-        type: string
-      - name: branch
-        type: string
-      - name: path
-        type: string
+  params:
+    - name: repository
+      type: string
+    - name: branch
+      type: string
+    - name: path
+      type: string
   steps:
     - name: echo
       image: ubuntu:18.04
       command:
         - echo
       args:
-        - "hello world from $(inputs.params.repository):$(inputs.params.branch):$(inputs.params:path)!!"
+        - "hello world from $(params.repository):$(params.branch):$(params:path)!!"
