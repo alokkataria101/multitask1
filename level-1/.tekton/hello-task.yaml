@@ -6,10 +6,6 @@ spec:
   steps:
     - name: echo
       image: python
-      script: |
-        #!/usr/bin/env python3
-        print("Hello from Python!")
-        print("Hello from Python!101")
       command: 
         - echo
       args:
