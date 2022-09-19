@@ -20,7 +20,7 @@ spec:
           name: hello-pipeline
         params:
           - name: repository
-            value: "$(params.repository)"
+            value: "https://github.com/SudhaManu1/Tekton-Tutorial.git"
           - name: branch
             value: "bug"
           - name: path
