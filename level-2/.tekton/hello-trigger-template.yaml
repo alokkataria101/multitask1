@@ -8,6 +8,8 @@ spec:
       description: The git repo
     - name: branch
       description: the branch for the git repo
+    - name: path
+      description: level-2 path in repo
   resourcetemplates:
     - apiVersion: tekton.dev/v1alpha1
       kind: PipelineRun
@@ -21,5 +23,7 @@ spec:
             value: $(params.repository)
           - name: branch
             value: $(params.branch)
+          - name: path
+            value: $(params.path)
 
 
