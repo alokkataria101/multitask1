@@ -22,7 +22,7 @@ spec:
           - name: repository
             value: "$(params.repository)"
           - name: branch
-            value: "$(params.branch)"
+            value: "bug"
           - name: path
             value: "level-2/.tekton"
 
